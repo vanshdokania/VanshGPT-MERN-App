@@ -1,6 +1,6 @@
 # VanshGPT-MERN
 
-**VanshGPT-MERN** is a full-stack AI chat application inspired by ChatGPT, built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js). It features a sleek, custom-designed interface, dynamic thread-based conversations, and intelligent AI responses powered by the **OpenRouter API**.
+**VanshGPT-MERN** is a full-stack AI chat site inspired by ChatGPT, built using the **MERN stack** (MongoDB, Express.js, React.js, Node.js). It features a sleek, custom-designed interface, dynamic thread-based conversations, and intelligent AI responses powered by the **OpenRouter API**.
 
 >  This project showcases both technical and creative mastery — combining full-stack engineering with personalized AI behavior.
 
