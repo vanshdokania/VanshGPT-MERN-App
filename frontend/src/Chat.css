@@ -1,0 +1,113 @@
+.chats {
+    max-width: 700px;
+    width: 100%;
+    overflow-y: auto;
+    padding: 1.5rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    scrollbar-width: thin;
+    scrollbar-color: #339cff #2a2a2a;
+}
+
+.userDiv {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.95rem;
+}
+
+.gptDiv {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 0.95rem;
+    gap: 0.5rem;
+}
+
+.userMessage {
+    background-color: #2a2a2a;
+    padding: 12px 18px;
+    border-radius: 18px 18px 4px 18px;
+    max-width: 500px;
+    width: fit-content;
+    color: #f0f0f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+}
+
+.gptMessage {
+    background-color: rgba(51, 156, 255, 0.15);
+    padding: 12px 18px;
+    border-radius: 18px 18px 18px 4px;
+    max-width: 500px;
+    width: fit-content;
+    border-left: 3px solid #339cff;
+    color: #f0f0f0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    line-height: 1.5;
+}
+
+pre {
+    white-space: pre-wrap;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    background-color: #1e1e1e !important;
+    border-radius: 12px !important;
+    border: 1px solid #333;
+    overflow-x: auto;
+}
+
+.hljs {
+    background-color: transparent !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+}
+
+.chatFooter {
+    font-size: 0.8rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: #777;
+    padding: 1rem;
+    border-top: 1px solid #333;
+}
+
+.chats::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chats::-webkit-scrollbar-track {
+    background: #2a2a2a;
+}
+
+.chats::-webkit-scrollbar-thumb {
+    background-color: #339cff;
+    border-radius: 3px;
+}
+
+@keyframes messageFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.userMessage, .gptMessage {
+    animation: messageFadeIn 0.3s ease-out;
+}
+
+@media (max-width: 768px) {
+    .chats {
+        padding: 1rem;
+    }
+    
+    .userMessage, .gptMessage {
+        max-width: 85%;
+        margin-left: 0;
+    }
+}
